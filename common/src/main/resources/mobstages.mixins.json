@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "dev.behindthescenery.mobstages.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "ReloadableServerResourcesMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
