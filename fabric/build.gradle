@@ -33,6 +33,7 @@ dependencies {
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')
 
+    modImplementation "curse.maven:fabric-api-306612:7081224"
     modImplementation "curse.maven:sdm-stages-1082036:7137722"
 }
 

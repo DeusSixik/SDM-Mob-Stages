@@ -10,6 +10,6 @@ public final class MobStages {
 
 
         LifecycleEvent.SERVER_STARTED.register(MobStagesEvent::onServerStarted);
-        EntityEvent.ADD.register(MobStagesEvent::onEntityAdd);
+        EntityEvent.LIVING_CHECK_SPAWN.register(MobStagesEvent::onEntityAdd);
     }
 }

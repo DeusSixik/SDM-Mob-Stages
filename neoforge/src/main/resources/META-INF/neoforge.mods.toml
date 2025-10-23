@@ -18,28 +18,28 @@ modId = "neoforge"
 type = "required"
 versionRange = "[21,)"
 ordering = "NONE"
-side = "SERVER"
+side = "BOTH"
 
 [[dependencies.mobstages]]
 modId = "minecraft"
 type = "required"
 versionRange = "[1.21.1,)"
 ordering = "NONE"
-side = "SERVER"
+side = "BOTH"
 
 [[dependencies.mobstages]]
 modId = "architectury"
 type = "required"
 versionRange = "[13.0.8,)"
 ordering = "AFTER"
-side = "SERVER"
+side = "BOTH"
 
 [[dependencies.mobstages]]
 modId = "sdmstages"
 type = "required"
 versionRange = "[0.2.0,)"
-ordering = "AFTER"
-side = "SERVER"
+ordering = "NONE"
+side = "BOTH"
 
 [[mixins]]
 config = "mobstages.mixins.json"

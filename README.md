@@ -38,3 +38,6 @@ MobStages.builder(<entitytype:minecraft:pig>, "stage_one").biome(<resource:minec
 | replace   | entity_id as ResourceLocation                  | EntityStageBuilder | Indicates which entity the original entity will be replaced with if the conditions are not met. |
 | replace   | entityType as EntityType<?>                    | EntityStageBuilder | Indicates which entity the original entity will be replaced with if the conditions are not met. |
 | build     |                                                | void               | The last stage. Completes the constructor chain                                                 |
+
+
+

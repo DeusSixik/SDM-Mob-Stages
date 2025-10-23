@@ -6,6 +6,7 @@ import dev.behindthescenery.sdmstages.data.containers.Stage;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelAccessor;
 
 public class BaseEntityStage implements EntityStage {
 
@@ -27,7 +28,7 @@ public class BaseEntityStage implements EntityStage {
     }
 
     @Override
-    public boolean canSpawn(Entity entity, Level level, Stage stage) {
+    public boolean canSpawn(Entity entity, LevelAccessor level, Stage stage) {
         if (!entity.getType().equals(entityType))
             return true;
 
@@ -44,7 +45,7 @@ public class BaseEntityStage implements EntityStage {
         return true;
     }
 
-    protected void cantSpawn(Entity entity, Level level) {
+    protected void cantSpawn(Entity entity, LevelAccessor level) {
         for (FunctionEntity function : functions) {
             function.execute(entity, level);
         }
